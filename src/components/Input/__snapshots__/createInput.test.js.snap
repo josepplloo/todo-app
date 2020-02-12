@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test for Input component should be like the snaptshot 1`] = `
+<input
+  label="todo item"
+  nameplace="wite something you need to do"
+/>
+`;
