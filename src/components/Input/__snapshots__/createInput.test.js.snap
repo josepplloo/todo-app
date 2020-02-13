@@ -2,7 +2,8 @@
 
 exports[`test for Input component should be like the snaptshot 1`] = `
 <input
+  class="app-input"
   label="todo item"
-  nameplace="wite something you need to do"
+  placeholder=" Write something you need to do"
 />
 `;
