@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test for ItemList component should be like the snaptshot 1`] = `
+<ul
+  class="app-item-list"
+  label="todo list of items"
+>
+  <li
+    key="0"
+  >
+    [object HTMLDivElement]
+  </li>
+  ,
+  <li
+    key="1"
+  >
+    [object HTMLDivElement]
+  </li>
+  ,
+  <li
+    key="2"
+  >
+    [object HTMLDivElement]
+  </li>
+  ,
+  <li
+    key="3"
+  >
+    [object HTMLDivElement]
+  </li>
+</ul>
+`;
