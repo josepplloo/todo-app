@@ -1,0 +1,15 @@
+.app-input {
+  border-radius: 5px;
+  box-shadow: 0px 6px 8px gray;
+  border: unset;
+  font-size: 1rem;
+  font-weight: lighter;
+  height: 4em;
+  max-width: 100%;
+  width: 60em;
+  
+  &::placeholder {
+    color: gray;
+    font-size: 1rem;
+  }
+}
