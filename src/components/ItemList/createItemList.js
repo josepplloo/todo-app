@@ -7,7 +7,7 @@ function createitemList() {
   const itemListElement = document.createElement('UL');
   itemListElement.setAttribute('label', constants.altText);
   itemListElement.className = 'app-item-list';
-  itemListElement.innerHTML = itemData.map((item, index) => `<li key=${index}>${ceateTodoItem(item)}</li>`);
+  itemData.forEach((item, index) => itemListElement.appendChild(ceateTodoItem(item, index)));
   return itemListElement;
 }
 
