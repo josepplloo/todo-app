@@ -6,24 +6,82 @@ exports[`test for ItemList component should be like the snaptshot 1`] = `
   label="todo list of items"
 >
   <li
+    class="todoitem"
     data-key="0"
   >
-    false garbage can
+    <button
+      class="toggle-button"
+      type="button"
+    >
+      <img
+        src="./assets/checkmark.svg"
+      />
+    </button>
+    <div
+      contenteditable="true"
+    >
+      Clean dishes
+    </div>
   </li>
   <li
+    class="todoitem"
     data-key="1"
   >
-    false organizer
+    <button
+      class="toggle-button"
+      type="button"
+    />
+    <div
+      contenteditable="true"
+    >
+      garbage can
+    </div>
   </li>
   <li
+    class="todoitem"
     data-key="2"
   >
-    true teddy beaber
+    <button
+      class="toggle-button"
+      type="button"
+    />
+    <div
+      contenteditable="true"
+    >
+      organizer
+    </div>
   </li>
   <li
+    class="todoitem"
     data-key="3"
   >
-    false Fruit
+    <button
+      class="toggle-button"
+      type="button"
+    >
+      <img
+        src="./assets/checkmark.svg"
+      />
+    </button>
+    <div
+      contenteditable="true"
+    >
+      teddy beaber
+    </div>
+  </li>
+  <li
+    class="todoitem"
+    data-key="4"
+  >
+    <button
+      class="toggle-button"
+      type="button"
+    />
+    <div
+      contenteditable="true"
+    >
+      Fruit
+    </div>
   </li>
 </ul>
 `;
