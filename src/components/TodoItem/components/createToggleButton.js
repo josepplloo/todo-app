@@ -1,16 +1,16 @@
 import './toggleButton.scss';
 
 function createToggleButton(status = false) {
-  const togleElement = document.createElement('button');
-  togleElement.setAttribute('type', 'button');
+  const toggleElement = document.createElement('button');
+  toggleElement.setAttribute('type', 'button');
 
   const checkmark = document.createElement('img');
   checkmark.setAttribute('src', './assets/checkmark.svg');
 
-  if (status) togleElement.appendChild(checkmark);
+  if (status) toggleElement.appendChild(checkmark);
 
-  togleElement.className = 'toggle-button';
-  return togleElement;
+  toggleElement.className = 'toggle-button';
+  return toggleElement;
 }
 
 export default createToggleButton;
