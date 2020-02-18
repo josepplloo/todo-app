@@ -1,4 +1,5 @@
 import constants from './constants';
+
 import './title.scss';
 
 function createTitle() {

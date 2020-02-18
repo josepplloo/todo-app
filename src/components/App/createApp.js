@@ -1,8 +1,8 @@
 import createTitle from '../Title/createTitle';
 import createInput from '../Input/createInput';
 import createItemList from '../ItemList/createItemList';
-import './app.scss';
 
+import './app.scss';
 
 function createApp(node) {
   const titleElement = createTitle();
