@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test for Input component should be like the snaptshot 1`] = `
+exports[`should have a styles and layout like the snapshot 1`] = `
 <input
   class="app-input"
   label="todo item"

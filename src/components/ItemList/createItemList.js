@@ -1,7 +1,9 @@
 import constants from './constants';
-import './itemList.scss';
-import itemData from '../../data/data';
 import ceateTodoItem from '../TodoItem/createTodoItem';
+
+import itemData from '../../data/data';
+
+import './itemList.scss';
 
 function createitemList() {
   const itemListElement = document.createElement('UL');
