@@ -18,10 +18,19 @@ exports[`test for ItemList component should be like the snaptshot 1`] = `
       />
     </button>
     <div
+      class="editable-label"
       contenteditable="true"
     >
       Clean dishes
     </div>
+    <button
+      class="close-button"
+      type="button"
+    >
+      <img
+        src="./assets/close.svg"
+      />
+    </button>
   </li>
   <li
     class="todoitem"
@@ -32,10 +41,19 @@ exports[`test for ItemList component should be like the snaptshot 1`] = `
       type="button"
     />
     <div
+      class="editable-label"
       contenteditable="true"
     >
       garbage can
     </div>
+    <button
+      class="close-button"
+      type="button"
+    >
+      <img
+        src="./assets/close.svg"
+      />
+    </button>
   </li>
   <li
     class="todoitem"
@@ -46,10 +64,19 @@ exports[`test for ItemList component should be like the snaptshot 1`] = `
       type="button"
     />
     <div
+      class="editable-label"
       contenteditable="true"
     >
       organizer
     </div>
+    <button
+      class="close-button"
+      type="button"
+    >
+      <img
+        src="./assets/close.svg"
+      />
+    </button>
   </li>
   <li
     class="todoitem"
@@ -64,10 +91,19 @@ exports[`test for ItemList component should be like the snaptshot 1`] = `
       />
     </button>
     <div
+      class="editable-label"
       contenteditable="true"
     >
       teddy beaber
     </div>
+    <button
+      class="close-button"
+      type="button"
+    >
+      <img
+        src="./assets/close.svg"
+      />
+    </button>
   </li>
   <li
     class="todoitem"
@@ -78,10 +114,19 @@ exports[`test for ItemList component should be like the snaptshot 1`] = `
       type="button"
     />
     <div
+      class="editable-label"
       contenteditable="true"
     >
       Fruit
     </div>
+    <button
+      class="close-button"
+      type="button"
+    >
+      <img
+        src="./assets/close.svg"
+      />
+    </button>
   </li>
 </ul>
 `;
