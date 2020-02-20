@@ -3,3 +3,5 @@ dist
 .DS_Store
 .firebase
 package-lock.json
+yarn.lock
+__snapshots__

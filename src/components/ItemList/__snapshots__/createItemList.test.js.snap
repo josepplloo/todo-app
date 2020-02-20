@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should have a styles and layout like the snapshot 1`] = `
+<ul
+  class="app-item-list"
+  label="todo list of items"
+>
+  <li
+    data-key="0"
+  >
+    false garbage can
+  </li>
+  <li
+    data-key="1"
+  >
+    false organizer
+  </li>
+  <li
+    data-key="2"
+  >
+    true teddy beaber
+  </li>
+  <li
+    data-key="3"
+  >
+    false Fruit
+  </li>
+</ul>
+`;

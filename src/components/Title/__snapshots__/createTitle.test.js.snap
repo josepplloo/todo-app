@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should have a styles and layout like the snapshot 1`] = `
+<h1
+  class="app-title"
+  label="to do list"
+>
+  todos
+</h1>
+`;
