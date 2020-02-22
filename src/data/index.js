@@ -7,6 +7,7 @@ export default {
   getChangeList: () => changeListeners,
   get: () => todoItems,
   put: (item) => todoItems.unshift(item),
+  delete: (itemId) => (todoItems.splice(todoItems.indexOf(todoItems.filter((item) => item.itemID === itemId)), 1)),
   subscribe: (callbackfunction) => changeListeners.push(callbackfunction),
   publish: () => changeListeners.forEach((changeListener) => (changeListener())),
 };

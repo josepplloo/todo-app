@@ -1,4 +1,5 @@
 import constants from './constants';
+import generateID from '../../utils';
 import datamanager from '../../data';
 import './input.scss';
 
@@ -9,6 +10,7 @@ function createInput() {
   inputElement.className = 'app-input';
   inputElement.handleInput = (inputText = inputElement.value) => (
     {
+      itemID: generateID(),
       itemName: inputText,
       itemStatus: false,
     }

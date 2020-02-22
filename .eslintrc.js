@@ -17,6 +17,7 @@ module.exports = {
   },
   rules: {
     "semi": ["error", "always"],
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "max-len": [2, 120, 8]
   },
 };

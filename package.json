@@ -4,6 +4,7 @@
   "description": "JS to do list",
   "private": true,
   "scripts": {
+    "slint": "slint .",
     "test": "jest --watch",
     "build": "webpack",
     "start": "webpack-dev-server --open --config webpack.config.js"
