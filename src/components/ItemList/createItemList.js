@@ -1,15 +1,15 @@
 import constants from './constants';
 import ceateTodoItem from '../TodoItem/createTodoItem';
 
-import itemData from '../../data/data';
+import datamanager from '../../data';
 
 import './itemList.scss';
 
-function createitemList() {
+function createitemList(itemList = datamanager.get()) {
   const itemListElement = document.createElement('UL');
   itemListElement.setAttribute('label', constants.altText);
   itemListElement.className = 'app-item-list';
-  itemData.forEach((item, index) => itemListElement.appendChild(ceateTodoItem(item, index)));
+  itemList.forEach((item, index) => itemListElement.appendChild(ceateTodoItem(item, index)));
   return itemListElement;
 }
 

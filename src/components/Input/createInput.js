@@ -1,4 +1,5 @@
 import constants from './constants';
+import datamanager from '../../data';
 import './input.scss';
 
 function createInput() {
@@ -6,19 +7,18 @@ function createInput() {
   inputElement.setAttribute('label', constants.altText);
   inputElement.setAttribute('placeholder', constants.placeholderText);
   inputElement.className = 'app-input';
-  inputElement.handleInput = (inputText = inputElement.value) => {
-    // TODO: send the value to data object.
-    console.log(inputText);
-    return {
+  inputElement.handleInput = (inputText = inputElement.value) => (
+    {
       itemName: inputText,
       itemStatus: false,
-    };
-  };
+    }
+  );
 
   inputElement.onkeyup = (e) => {
     if (e.code === 'Enter') {
-      inputElement.handleInput();
+      datamanager.put(inputElement.handleInput());
       inputElement.value = '';
+      datamanager.publish();
     }
   };
   return inputElement;
