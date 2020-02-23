@@ -2,7 +2,6 @@ import createToggleButton from './components/createToggleButton';
 import createEditableLabel from './components/createEditableLabel';
 import createCloseButton from './components/createCloseButton';
 import generateID from '../../utils';
-import datamanager from '../../data';
 
 import './todoItem.scss';
 
@@ -11,14 +10,9 @@ function createTodoItem(
 ) {
   const todoElement = document.createElement('li');
   todoElement.setAttribute('data-key', itemID);
-  todoElement.appendChild(createToggleButton(itemStatus));
+  todoElement.appendChild(createToggleButton(itemStatus, itemID));
   todoElement.appendChild(createEditableLabel(itemName));
-  function handleCloseButton(e) {
-    e.preventDefault();
-    datamanager.delete(itemID);
-    datamanager.publish();
-  }
-  todoElement.appendChild(createCloseButton(handleCloseButton));
+  todoElement.appendChild(createCloseButton(itemID));
   todoElement.className = 'todoitem';
   return todoElement;
 }

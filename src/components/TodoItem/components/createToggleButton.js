@@ -1,8 +1,16 @@
 import './toggleButton.scss';
+import datamanager from '../../../data';
 
-function createToggleButton(status = false) {
+function handleClick(e, itemID) {
+  e.preventDefault();
+  datamanager.changeStatus(itemID);
+  datamanager.publish();
+}
+
+function createToggleButton(status = false, itemID) {
   const toggleElement = document.createElement('button');
   toggleElement.setAttribute('type', 'button');
+  toggleElement.onclick = (e) => handleClick(e, itemID);
 
   const checkmark = document.createElement('img');
   checkmark.setAttribute('src', './assets/checkmark.svg');

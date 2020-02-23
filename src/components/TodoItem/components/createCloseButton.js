@@ -1,13 +1,22 @@
 import './closeButton.scss';
+import datamanager from '../../../data';
 
-function createCloseButton(handleCloseButton) {
+
+function handleClick(e, itemID) {
+  e.preventDefault();
+  datamanager.delete(itemID);
+  datamanager.publish();
+}
+
+function createCloseButton(itemID) {
   const closeElement = document.createElement('button');
   closeElement.setAttribute('type', 'button');
-  closeElement.onclick = handleCloseButton;
+  closeElement.onclick = (e) => handleClick(e, itemID);
+  closeElement.className = 'close-button';
+
   const checkmark = document.createElement('img');
   checkmark.setAttribute('src', './assets/close.svg');
   closeElement.appendChild(checkmark);
-  closeElement.className = 'close-button';
   return closeElement;
 }
 
