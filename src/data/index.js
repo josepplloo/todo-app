@@ -12,6 +12,9 @@ export default {
   changeStatus: (itemId) => todoItems.forEach((item) => {
     if (item.itemID === itemId) { item.itemStatus = !item.itemStatus; }
   }),
+  updateName: (itemId, newName) => todoItems.forEach((item) => {
+    if (item.itemID === itemId) { item.itemName = newName; }
+  }),
   subscribe: (callbackfunction) => changeListeners.push(callbackfunction),
   publish: () => changeListeners.forEach((changeListener) => (changeListener())),
 };

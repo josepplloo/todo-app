@@ -27,10 +27,26 @@ it('Should toggle an item status in the list', () => {
   const mutatedList = datamanager.get();
   expect(mutatedList.filter((i) => i.itemID === 13)).toStrictEqual(itemTrue);
 });
+it('Should change an item Name value in the list', () => {
+  const initialItem = [{
+    itemID: 13,
+    itemName: 'organizer',
+    itemStatus: true,
+  }];
+  const finalItem = [{
+    itemID: 13,
+    itemName: 'blue organizer',
+    itemStatus: true,
+  }];
+  expect(todolist.filter((i) => i.itemID === 13)).toStrictEqual(initialItem);
+  datamanager.updateName(13, 'blue organizer');
+  const mutatedList = datamanager.get();
+  expect(mutatedList.filter((i) => i.itemID === 13)).toStrictEqual(finalItem);
+});
 it('Should delete an item in the list', () => {
   const item13 = [{
     itemID: 13,
-    itemName: 'organizer',
+    itemName: 'blue organizer',
     itemStatus: true,
   }];
   expect(todolist.filter((i) => i.itemID === 13)).toStrictEqual(item13);

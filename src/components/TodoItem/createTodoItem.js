@@ -11,7 +11,7 @@ function createTodoItem(
   const todoElement = document.createElement('li');
   todoElement.setAttribute('data-key', itemID);
   todoElement.appendChild(createToggleButton(itemStatus, itemID));
-  todoElement.appendChild(createEditableLabel(itemName));
+  todoElement.appendChild(createEditableLabel(itemName, itemID));
   todoElement.appendChild(createCloseButton(itemID));
   todoElement.className = 'todoitem';
   return todoElement;
