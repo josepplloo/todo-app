@@ -7,7 +7,7 @@ exports[`should have a styles and layout like the snapshot 1`] = `
 >
   <li
     class="todoitem"
-    data-key="0"
+    data-key="1"
   >
     <button
       class="toggle-button"
@@ -34,7 +34,7 @@ exports[`should have a styles and layout like the snapshot 1`] = `
   </li>
   <li
     class="todoitem"
-    data-key="1"
+    data-key="12"
   >
     <button
       class="toggle-button"
@@ -57,7 +57,7 @@ exports[`should have a styles and layout like the snapshot 1`] = `
   </li>
   <li
     class="todoitem"
-    data-key="2"
+    data-key="13"
   >
     <button
       class="toggle-button"
@@ -80,7 +80,7 @@ exports[`should have a styles and layout like the snapshot 1`] = `
   </li>
   <li
     class="todoitem"
-    data-key="3"
+    data-key="14"
   >
     <button
       class="toggle-button"
@@ -107,7 +107,7 @@ exports[`should have a styles and layout like the snapshot 1`] = `
   </li>
   <li
     class="todoitem"
-    data-key="4"
+    data-key="111"
   >
     <button
       class="toggle-button"

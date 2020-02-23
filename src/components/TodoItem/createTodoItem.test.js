@@ -10,10 +10,15 @@ it('Should have a div as a main element', () => {
   const todoItem = createTodoItem();
   expect(todoItem.tagName).toBe('LI');
 });
-it('Should delete an item in the list'), () => {
+it('Should delete an item in the list', () => {
+  const item13 = [{
+    itemID: 13,
+    itemName: 'organizer',
+    itemStatus: false,
+  }];
   const todolist = datamanager.get();
-  mutateTodoList =  todolist.splice(todoItems.indexOf(todoItems.filter((item=12) => item.itemID === 12)), 1);
-
-  expect(todoItem.tagName).toBe('LI');
+  expect(todolist.filter((i) => i.itemID === 13)).toStrictEqual(item13);
+  datamanager.delete(13);
+  const mutatedList = datamanager.get();
+  expect(mutatedList.filter((i) => i.itemID === 13)).toStrictEqual([]);
 });
-

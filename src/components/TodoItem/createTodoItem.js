@@ -15,7 +15,8 @@ function createTodoItem(
   todoElement.appendChild(createEditableLabel(itemName));
   function handleCloseButton(e) {
     e.preventDefault();
-    datamanager.delete(itemID); datamanager.publish(); console.log(itemID, datamanager.get());
+    datamanager.delete(itemID);
+    datamanager.publish();
   }
   todoElement.appendChild(createCloseButton(handleCloseButton));
   todoElement.className = 'todoitem';
