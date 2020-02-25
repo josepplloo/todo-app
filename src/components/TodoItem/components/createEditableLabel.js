@@ -10,7 +10,12 @@ function createEditableLabel(textValue, itemID) {
   labelElement.setAttribute('contenteditable', true);
   labelElement.innerHTML = textValue;
   labelElement.className = 'editable-label';
-  labelElement.oninput = (e) => handleClick(e, itemID);
+
+  if (datamanager.getOne(itemID).itemStatus) {
+    labelElement.className = 'editable-label editable-label-disable';
+  } else {
+    labelElement.oninput = (e) => handleClick(e, itemID);
+  }
   return labelElement;
 }
 
