@@ -6,7 +6,8 @@ import generateID from '../../utils';
 import './todoItem.scss';
 
 function createTodoItem(
-  { itemID, itemName, itemStatus } = { itemID: generateID(), itemName: '', itemStatus: false },
+  { itemID, itemName, itemStatus } =
+  { itemID: generateID(), itemName: '', itemStatus: false },
 ) {
   const todoElement = document.createElement('li');
   todoElement.setAttribute('data-key', itemID);

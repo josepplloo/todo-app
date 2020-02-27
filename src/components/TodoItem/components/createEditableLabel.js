@@ -5,7 +5,7 @@ function handleClick(e, itemID) {
   datamanager.updateName(itemID, e.target.innerText);
 }
 
-function createEditableLabel(textValue, itemID) {
+function createEditableLabel(textValue = '', itemID = 12) {
   const labelElement = document.createElement('div');
   labelElement.setAttribute('contenteditable', true);
   labelElement.innerHTML = textValue;

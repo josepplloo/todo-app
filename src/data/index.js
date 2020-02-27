@@ -15,6 +15,7 @@ export default {
   updateName: (itemId, newName) => todoItems.forEach((item) => {
     if (item.itemID === itemId) { item.itemName = newName; }
   }),
+  filterComplete: () => todoItems.filter((item) => !item.itemStatus),
   subscribe: (callbackfunction) => changeListeners.push(callbackfunction),
   publish: () => changeListeners.forEach((changeListener) => (changeListener())),
 };

@@ -3,14 +3,11 @@ import datamanager from '../../data';
 
 const todolist = datamanager.get();
 
-it('Should have a div as a main element', () => {
-  const todoItem = createTodoItem();
+it('Should have a LI as a main element', () => {
+  const todoItem = createTodoItem(12, 'test', false);
   expect(todoItem.tagName).toBe('LI');
 });
-it('Should have a div as a main element', () => {
-  const todoItem = createTodoItem();
-  expect(todoItem.tagName).toBe('LI');
-});
+
 it('Should toggle an item status in the list', () => {
   const itemFalse = [{
     itemID: 13,
