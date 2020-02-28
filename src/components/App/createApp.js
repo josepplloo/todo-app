@@ -11,11 +11,11 @@ function createApp(node) {
   node.appendChild(createItemList(datamanager.get()));
 }
 
-function ReloadList() {
+function ReloadList(data = datamanager.get()) {
   const node = document.querySelector('.app-item-list');
   node.remove();
   const parentNode = document.querySelector('#app');
-  parentNode.appendChild(createItemList(datamanager.get()));
+  parentNode.appendChild(createItemList(data));
 }
 
 datamanager.subscribe(ReloadList);

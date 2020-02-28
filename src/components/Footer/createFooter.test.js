@@ -9,3 +9,7 @@ it('should render a <div /> element', () => {
 it('should recive all the uncomplete elements', () => {
   expect(datamanager.filterComplete().length).toBe(3);
 });
+
+it('should recive all the uncomplete elements', () => {
+  expect(datamanager.filterUncomplete().length).toBe(2);
+});

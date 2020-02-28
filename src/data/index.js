@@ -16,6 +16,7 @@ export default {
     if (item.itemID === itemId) { item.itemName = newName; }
   }),
   filterComplete: () => todoItems.filter((item) => !item.itemStatus),
+  filterUncomplete: () => todoItems.filter((item) => item.itemStatus),
   subscribe: (callbackfunction) => changeListeners.push(callbackfunction),
-  publish: () => changeListeners.forEach((changeListener) => (changeListener())),
+  publish: (d) => changeListeners.map((changeListener) => (changeListener(d))),
 };
