@@ -134,14 +134,29 @@ exports[`should have a styles and layout like the snapshot 1`] = `
     <span>
       3 items left
     </span>
-    <button>
-      All
-    </button>
-    <button>
-      Active
-    </button>
-    <button>
-      Complete
+    <div
+      class="buttons-container"
+    >
+      <button
+        class="footer-button footer-button-disabled"
+      >
+        All
+      </button>
+      <button
+        class="footer-button"
+      >
+        Active
+      </button>
+      <button
+        class="footer-button"
+      >
+        Complete
+      </button>
+    </div>
+    <button
+      class="footer-button"
+    >
+      Clear completed
     </button>
   </div>
 </ul>

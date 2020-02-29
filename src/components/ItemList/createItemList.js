@@ -11,7 +11,7 @@ function createitemList(itemList = datamanager.get()) {
   itemListElement.setAttribute('label', constants.altText);
   itemListElement.className = 'app-item-list';
   itemList.forEach((item) => itemListElement.appendChild(ceateTodoItem(item)));
-  itemListElement.appendChild(createFooter());
+  if (datamanager.get().length) { itemListElement.appendChild(createFooter()); }
   return itemListElement;
 }
 
