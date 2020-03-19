@@ -7,7 +7,7 @@ exports[`should have a styles and layout like the snapshot 1`] = `
 >
   <li
     class="todo-item"
-    data-key="0"
+    data-key="1"
   >
     <button
       class="toggle-button"
@@ -18,7 +18,7 @@ exports[`should have a styles and layout like the snapshot 1`] = `
       />
     </button>
     <div
-      class="editable-label"
+      class="editable-label editable-label-disable"
       contenteditable="true"
     >
       Clean dishes
@@ -91,7 +91,7 @@ exports[`should have a styles and layout like the snapshot 1`] = `
       />
     </button>
     <div
-      class="editable-label"
+      class="editable-label editable-label-disable"
       contenteditable="true"
     >
       teddy beaber
@@ -128,5 +128,36 @@ exports[`should have a styles and layout like the snapshot 1`] = `
       />
     </button>
   </li>
+  <div
+    class="footer"
+  >
+    <span>
+      3 items left
+    </span>
+    <div
+      class="buttons-container"
+    >
+      <button
+        class="footer-button footer-button-disabled"
+      >
+        All
+      </button>
+      <button
+        class="footer-button"
+      >
+        Active
+      </button>
+      <button
+        class="footer-button"
+      >
+        Complete
+      </button>
+    </div>
+    <button
+      class="footer-button"
+    >
+      Clear completed
+    </button>
+  </div>
 </ul>
 `;
