@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es2020: true,
+    es6: true,
     jest: true
   },
   extends: [
@@ -17,7 +17,6 @@ module.exports = {
   },
   rules: {
     "semi": ["error", "always"],
-    "quotes": ["error", "single"],
-    "max-len": [2, 120, 8]
+    "quotes": ["error", "single"]
   },
 };
