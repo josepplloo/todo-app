@@ -7,7 +7,7 @@ function handleClick(e, itemID) {
   datamanager.publish();
 }
 
-function createToggleButton(status = false, itemID) {
+function createCheckBox(status = false, itemID) {
   const toggleElement = document.createElement('button');
   toggleElement.setAttribute('type', 'button');
   toggleElement.onclick = (e) => handleClick(e, itemID);
@@ -21,4 +21,4 @@ function createToggleButton(status = false, itemID) {
   return toggleElement;
 }
 
-export default createToggleButton;
+export default createCheckBox;

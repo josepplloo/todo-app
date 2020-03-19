@@ -1,4 +1,4 @@
-import createToggleButton from './components/createToggleButton';
+import createCheckBox from './components/createCheckBox';
 import createEditableLabel from './components/createEditableLabel';
 import createCloseButton from './components/createCloseButton';
 import generateID from '../../utils';
@@ -11,10 +11,10 @@ function createTodoItem(
 ) {
   const todoElement = document.createElement('li');
   todoElement.setAttribute('data-key', itemID);
-  todoElement.appendChild(createToggleButton(itemStatus, itemID));
+  todoElement.appendChild(createCheckBox(itemStatus, itemID));
   todoElement.appendChild(createEditableLabel(itemName, itemID));
   todoElement.appendChild(createCloseButton(itemID));
-  todoElement.className = 'todoitem';
+  todoElement.className = 'todo-item';
   return todoElement;
 }
 

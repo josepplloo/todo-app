@@ -1,5 +1,6 @@
 import './closeButton.scss';
 import datamanager from '../../../data';
+import { CLOSE_ICON } from '../../../constants/paths';
 
 
 function handleClick(e, itemID) {
@@ -15,7 +16,7 @@ function createCloseButton(itemID) {
   closeElement.className = 'close-button';
 
   const checkmark = document.createElement('img');
-  checkmark.setAttribute('src', './assets/close.svg');
+  checkmark.setAttribute('src', CLOSE_ICON);
   closeElement.appendChild(checkmark);
   return closeElement;
 }

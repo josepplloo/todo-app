@@ -1,8 +1,8 @@
-import createToggleButton from './createToggleButton';
+import createCheckBox from './createCheckBox';
 import createEditableLabel from './createEditableLabel';
 
 it('Should recieve a button tag', () => {
-  const toggleButton = createToggleButton();
+  const toggleButton = createCheckBox();
   expect(toggleButton.tagName).toBe('BUTTON');
 });
 it('Should recieve a div editable tag', () => {
