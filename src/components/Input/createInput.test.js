@@ -10,10 +10,3 @@ it('should have a styles and layout like the snapshot', () => {
   expect(inputElement).toMatchSnapshot();
 });
 
-it('should submit a value on enter', () => {
-  const inputElement = createInput();
-  const INPUT_TEXT = 'Test todo item';
-  const data = inputElement.handleInput(INPUT_TEXT);
-  expect(data?.itemName).toBe(INPUT_TEXT);
-  expect(data?.itemStatus).toBe(false);
-});
