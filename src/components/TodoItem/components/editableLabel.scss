@@ -1,3 +1,10 @@
 .editable-label {
   width: 100%;
+
+  &-disable {
+    color: gray;
+    cursor: default;
+    pointer-events: none;
+    text-decoration: line-through;
+  }
 }
