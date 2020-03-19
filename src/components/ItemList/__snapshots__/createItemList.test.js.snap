@@ -6,7 +6,7 @@ exports[`should have a styles and layout like the snapshot 1`] = `
   label="todo list of items"
 >
   <li
-    class="todoitem"
+    class="todo-item"
     data-key="1"
   >
     <button
@@ -28,12 +28,12 @@ exports[`should have a styles and layout like the snapshot 1`] = `
       type="button"
     >
       <img
-        src="./assets/close.svg"
+        src="../assets/close.svg"
       />
     </button>
   </li>
   <li
-    class="todoitem"
+    class="todo-item"
     data-key="12"
   >
     <button
@@ -51,12 +51,12 @@ exports[`should have a styles and layout like the snapshot 1`] = `
       type="button"
     >
       <img
-        src="./assets/close.svg"
+        src="../assets/close.svg"
       />
     </button>
   </li>
   <li
-    class="todoitem"
+    class="todo-item"
     data-key="13"
   >
     <button
@@ -74,12 +74,12 @@ exports[`should have a styles and layout like the snapshot 1`] = `
       type="button"
     >
       <img
-        src="./assets/close.svg"
+        src="../assets/close.svg"
       />
     </button>
   </li>
   <li
-    class="todoitem"
+    class="todo-item"
     data-key="14"
   >
     <button
@@ -101,12 +101,12 @@ exports[`should have a styles and layout like the snapshot 1`] = `
       type="button"
     >
       <img
-        src="./assets/close.svg"
+        src="../assets/close.svg"
       />
     </button>
   </li>
   <li
-    class="todoitem"
+    class="todo-item"
     data-key="111"
   >
     <button
@@ -124,7 +124,7 @@ exports[`should have a styles and layout like the snapshot 1`] = `
       type="button"
     >
       <img
-        src="./assets/close.svg"
+        src="../assets/close.svg"
       />
     </button>
   </li>
