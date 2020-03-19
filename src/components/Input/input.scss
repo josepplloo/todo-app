@@ -6,10 +6,12 @@
   font-weight: lighter;
   height: 4em;
   max-width: 100%;
+  padding: 1rem;
   width: 60em;
   
   &::placeholder {
     color: gray;
     font-size: 1rem;
+    font-style: italic;
   }
 }

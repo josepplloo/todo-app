@@ -1,5 +1,9 @@
 const todoList = [
   {
+    itemName: 'Clean dishes',
+    itemStatus: true,
+  },
+  {
     itemName: 'garbage can',
     itemStatus: false,
   },
