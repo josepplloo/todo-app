@@ -7,3 +7,4 @@ yarn.lock
 __snapshots__
 .vscode
 .snap
+yarn.lock
