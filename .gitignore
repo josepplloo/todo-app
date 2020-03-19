@@ -6,3 +6,4 @@ package-lock.json
 yarn.lock
 __snapshots__
 .vscode
+.snap
