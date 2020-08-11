@@ -9,14 +9,14 @@ Created using JavaScript, and the bundle configuration was made using webpack.
 ## Scripts
 
   `npm test`
-  > start jest and run the test.
+  > start jest and run the test suite.
 
   `npm start`
-  > start webpack in development mode runing at `http://localhost:8080`.
+  > start webpack in development mode running at `http://localhost:8080`.
 
   `npm run build`
   > start webpack bundler and create the `docs` folder.
 
-  #### know issues
+  #### known issues
    - initial list hard coded.
    - clear completed button is not working properly.
